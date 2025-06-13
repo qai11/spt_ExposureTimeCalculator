@@ -7,8 +7,17 @@ import time
 import subprocess
 import numpy as np
 
+#Run command python3 scripts/run_etc.py @scripts/run_etc.defaults
+
+sys.path.insert(0, '/Users/quin/spt_ExposureTimeCalculator/python/')
+
+
 from pfsspecsim import pfsetc
 
+sys.path.insert(0, '/Users/quin/spt_ExposureTimeCalculator/scripts/')
+
+
+print(sys.path)
 
 def convert_arg_line_to_args(arg_line):
     """Make argparse handle Hirata-style parameter files"""
