@@ -106,7 +106,7 @@ class Etc(object):
                        'degrade': '1.0',
                        'SKY_SUB_FLOOR': '0.01',
                        'DIFFUSE_STRAY': '0.02',
-                       'throughput_model': '20240714',
+                       'throughput_model': '20250603',
                        'spectrograph': 'ave',
                        'OUTDIR': 'out',
                        'TMPDIR': 'tmp',
@@ -187,16 +187,16 @@ class Etc(object):
         self.throughput_model = self.params['throughput_model']
         if self.spectrograph in ['sm1', 'sm2', 'sm3', 'sm4']:
             self.INSTR_SETUP = self.HOME_DIR + \
-                '/config/PFS.%s.%s.dat' % (self.throughput_model,
+                '/config/HERC.%s.%s.dat' % (self.throughput_model,
                                            self.spectrograph)
             self.INSTR_SETUP_MR = self.HOME_DIR + \
-                '/config/PFS.redMR.%s.%s.dat' % (
+                '/config/HERC.redMR.%s.%s.dat' % (
                     self.throughput_model, self.spectrograph)
         else:
             self.INSTR_SETUP = self.HOME_DIR + \
-                '/config/PFS.%s.dat' % (self.throughput_model)
+                '/config/HERC.%s.dat' % (self.throughput_model)
             self.INSTR_SETUP_MR = self.HOME_DIR + \
-                '/config/PFS.redMR.%s.dat' % (self.throughput_model)
+                '/config/HERC.redMR.%s.dat' % (self.throughput_model)
 
         # Noise reuse flag
         flag = '0'
