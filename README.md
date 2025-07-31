@@ -30,7 +30,7 @@ Installation
 ------------
 To install the package, get the git repository by typing the following command on the terminal (if you have git installed):
   
-    git clone --recursive https://github.com/Subaru-PFS/spt_ExposureTimeCalculator.git
+    git clone --recursive https://github.com/qai11/spt_ExposureTimeCalculator.git
     cd spt_ExposureTimeCalculator
     make
     python setup.py install
